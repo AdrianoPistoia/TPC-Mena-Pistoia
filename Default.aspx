@@ -2,41 +2,52 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <div id="cardRecepcion" >   
+        <div id="titulo">
+            <h1 class="bolder">Mercado Libren´t, el lugar en donde termina lo que sea que tengas en tu imaginacion.</h1>
+        </div>
+        <div id="desc" style="display:inline-block">
+            <p class="bolder">
+                Alguna vez habras pensado... "De chico imaginaba cosas muy locas" o cosas como ... " si lo que pensaba de chico fuese real, la vida seria mas colorida... "
+                Aqui les traemos la solucion a todos* sus deseos!
+                Gracias a</p>
+            <h6 class ="ilegible">fuentes reservadas</h6>
+            <p class="bolder">podras buscar y obtener cosas inimiaginables!</p>
+        </div >
     </div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
+    <div id="sliderProductos">
+        <div class ="MCcarta " id="prod1">
+                         <asp:Panel ID="Panel3"  CssClass="CartaProducto" runat="server">
+                <asp:Image ID="Image2" ImageUrl="~/Content/Question-Box.png" CssClass="Small" runat="server" />
+                <asp:Panel ID="Panel4" runat="server">
+                    <asp:Label ID="Label3" runat="server" CssClass="Bolder  ocupametodo" Text="Label">Producton´t</asp:Label>
+                    <asp:Label ID="Label4" runat="server" CssClass=" Bolder ocupametodo preciotag" Text="Label"> $100 <br /></asp:Label>
+                    <asp:Label Text="DescripcionProducto" runat="server" > Este Producto carece de veracidad, es un producto irreal creado por la ficcion narrada en su cabeza, estando asi , certificado por <br />cualquier cantidad de entidades ficticias de alta estima y posicion <br /> economica en el mercado</asp:Label>
+                    
+                </asp:Panel>
+            </asp:Panel>
         </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
+        <div class ="MCcarta " id="prod2">
+                         <asp:Panel ID="Panel1"  CssClass="CartaProducto" runat="server">
+                <asp:Image ID="Image1" ImageUrl="~/Content/Question-Box.png" CssClass="Small" runat="server" />
+                <asp:Panel ID="Panel2" runat="server">
+                    <asp:Label ID="Label1" runat="server" CssClass="Bolder  ocupametodo" Text="Label">Producton´t</asp:Label>
+                    <asp:Label ID="Label2" runat="server" CssClass=" Bolder ocupametodo preciotag" Text="Label"> $100 <br /></asp:Label>
+                    <asp:Label Text="DescripcionProducto" runat="server" > Este Producto carece de veracidad, es un producto irreal creado por la ficcion narrada en su cabeza, estando asi , certificado por <br />cualquier cantidad de entidades ficticias de alta estima y posicion <br /> economica en el mercado</asp:Label>
+                    
+                </asp:Panel>
+            </asp:Panel>
         </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
+        <div class ="MCcarta " id="prod3">
+                         <asp:Panel ID="Panel5"  CssClass="CartaProducto" runat="server">
+                <asp:Image ID="Image3" ImageUrl="~/Content/Question-Box.png" CssClass="Small" runat="server" />
+                <asp:Panel ID="Panel6" runat="server">
+                    <asp:Label ID="Label5" runat="server" CssClass="Bolder  ocupametodo" Text="Label">Producton´t</asp:Label>
+                    <asp:Label ID="Label6" runat="server" CssClass=" Bolder ocupametodo preciotag" Text="Label"> $100 <br /></asp:Label>
+                    <asp:Label Text="DescripcionProducto" runat="server" > Este Producto carece de veracidad, es un producto irreal creado por la ficcion narrada en su cabeza, estando asi , certificado por <br />cualquier cantidad de entidades ficticias de alta estima y posicion <br /> economica en el mercado</asp:Label>
+                    
+                </asp:Panel>
+            </asp:Panel>
         </div>
     </div>
-
 </asp:Content>
