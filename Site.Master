@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Mercado Libren´t</title>
+    <title><%: Page.Title %> - The Carpet Shop</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -16,7 +16,7 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body style="background-color:mediumorchid">
+<body  class="BGCutePink BorderShadowLB TCS-Background-Image-Body  ">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -38,7 +38,7 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:powderblue; ">
+        <div class="navbar navbar-inverse navbar-fixed-top BorderColorLB BorderShadowLB BGLightBeige">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -46,14 +46,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" style="color:black;" href="~/">Mercado Libren´t </a>
+                    <a class="navbar-brand TextShadow  Bolder" runat="server" style="margin-left:5vw; color: rgba(255,255,255,0.9);" href="~/">The Carpet Shop </a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav" >
-                        <li><a runat="server" style="color:black;" href="~/">Home</a></li>
-                        <li><a runat="server" style="color:black;" href="~/Tienda">Tienda</a></li>
-                        <li><a runat="server" style="color:black;" href="~/About">About</a></li>
-                        <li><a runat="server" style="color:black;" href="~/Contact">Contact</a></li>
+                    <ul class="nav navbar-nav justify-center2" >
+                        <li style="margin-left:5vw;"><a runat="server" class="Bolder TextShadow" style="color:rgba(255,255,255,0.9);" href="~/Tienda">Tienda</a></li>
+                        <li style="margin-left:5vw;"><a runat="server" class="Bolder TextShadow" style="color:rgba(255,255,255,0.9);" href="~/About">Sobre mi</a></li>
+                        <li style="margin-left:5vw;"><a runat="server" class="Bolder TextShadow" style="color:rgba(255,255,255,0.9);" href="~/Contact">Contacto</a></li>
+                        <li style="margin-left:5vw;"><a runat="server" class="Bolder TextShadow" style="color:rgba(255,255,255,0.9);" href="~/">Inicio</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,9 +61,12 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Mercado Libren´t</p>
+            <hr class="BorderColorLB"/>
+            <footer >
+                <div style="display:grid; height:10vw;padding:10px;" class=" darkGrayBackground " >
+                    <p style="align-self:center" class="CPText">&copy; <%: DateTime.Now.Year %> - The Carpet Shop</p>
+                    <p style="align-self:center" class ="CPText">Intlectual property of Mena German & Pistoia Adriano</p>
+                </div>
             </footer>
         </div>
 

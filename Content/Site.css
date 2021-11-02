@@ -44,6 +44,13 @@ textarea {
     display:flex;
     justify-self:center;
 }
+.justify-center2 {
+    display: inline;
+    justify-self: center;
+}
+.left10vw{
+    left:10vw;
+}
 .max-height30px{
     height:30px;
     max-height:70px;
@@ -62,10 +69,77 @@ textarea {
 .Theme1{ background-color:red;}
 .Theme2{ background-color:black;}
 .Theme3 {background-color: #cae6ff;}
-.Border1{border: 5px solid black;}
-.BorderBox{
-    box-sizing:border-box;
+
+.BGLightBeige {
+    background-color: rgba(219,194,155,0.9);
 }
+.BorderLB {
+    border: 1px solid rgba(219,146,0.8);
+}
+.BorderShadowLB {
+    box-shadow: 0px 0px 20px rgba(219,146,0,0.8);
+}
+.TextLB {
+    color: rgba(219,146,0,0.8);
+}
+.TextShadow {
+    font-size:18px;
+    text-shadow: 1px 1px 3px black;
+}
+.BorderColorLB {
+    border-bottom: 1px solid rgba(219,146,0,0.8);
+}
+
+
+.BGWarmGreen {background-color: rgb(108,134,60);}
+.BorderWG {border: 3px solid rgb(108,134,60);}
+
+
+.BorderLG {
+    border: 3px solid rgb(137, 219, 56);
+}
+
+.BGCozyRed {
+    background-color: rgb(206,60,50);
+}
+.BorderCR {border: 3px solid rgb(206,60,50);}
+.BorderColorCR {
+    border-block-color: rgb(206,60,50)
+}
+.BGCutePink {background-color: rgb(246,230,215);}
+.CPText {color: rgb(246,230,215);}
+.p CPText {
+    color: rgb(246,230,215);
+}
+
+.BorderCP {
+    border: 3px solid rgb(246,230,215);
+}
+
+.TCS-Background-Image {
+    background-image: url('Images/Caratula1.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.TCS-Background-Image2 {
+    background-image: url('Images/Image1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.TCS-Background-Image-Body {
+    background-image: url('Images/Fondo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%, 50%;
+}
+
+
+.Border1 {
+    border: 5px solid black;
+}
+.BorderBox{box-sizing:border-box;}
 .ContentBox{
     box-sizing:content-box;
 }
