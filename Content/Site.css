@@ -57,8 +57,9 @@ textarea {
 }
 .stretch-60{
     max-width:none;
-    width:1000px;
+    width:1060px;
 }
+
 .LateralBox100{
     display:flex;
     align-self:flex-start;
@@ -91,10 +92,14 @@ textarea {
 }
 
 
-.BGWarmGreen {background-color: rgb(108,134,60);}
+.BGWarmGreen {
+    background-color: rgba(108,134,60,0.9);
+}
 .BorderWG {border: 3px solid rgb(108,134,60);}
 
-
+.BGLightGreen {
+    background-color: rgb(137, 219, 56);
+}
 .BorderLG {
     border: 3px solid rgb(137, 219, 56);
 }
@@ -115,7 +120,9 @@ textarea {
 .BorderCP {
     border: 3px solid rgb(246,230,215);
 }
-
+.darkGrayBackground {
+    background-color: #313131;
+}
 .TCS-Background-Image {
     background-image: url('Images/Caratula1.png');
     background-size:cover;
@@ -158,9 +165,7 @@ textarea {
 .borderColor {
     border-color: royalblue;
 }
-.darkGrayBackground {
-    background-color: #313131;
-}
+
 .CartaProducto {
     display: flex;
     margin: 5px;

@@ -50,10 +50,11 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav justify-center2" >
+                        <li style="margin-left:5vw;"><a runat="server" class="Bolder TextShadow" style="color:rgba(255,255,255,0.9);" href="~/">Inicio</a></li>
                         <li style="margin-left:5vw;"><a runat="server" class="Bolder TextShadow" style="color:rgba(255,255,255,0.9);" href="~/Tienda">Tienda</a></li>
                         <li style="margin-left:5vw;"><a runat="server" class="Bolder TextShadow" style="color:rgba(255,255,255,0.9);" href="~/About">Sobre mi</a></li>
                         <li style="margin-left:5vw;"><a runat="server" class="Bolder TextShadow" style="color:rgba(255,255,255,0.9);" href="~/Contact">Contacto</a></li>
-                        <li style="margin-left:5vw;"><a runat="server" class="Bolder TextShadow" style="color:rgba(255,255,255,0.9);" href="~/">Inicio</a></li>
+                        <li style="margin-left:5vw;"><a runat="server" class="Bolder TextShadow " style="color:rgba(255,255,255,0.9);" href="~/Carrito"><span class="glyphicon glyphicon-shopping-cart"></span> Carrito</a></li>
                     </ul>
                 </div>
             </div>

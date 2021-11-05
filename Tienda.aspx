@@ -1,25 +1,26 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Tienda.aspx.cs" Inherits="TPC_Mena_Pistoia.WebForm1" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<asp:Panel ID="containBuscador" runat="server" CssClass ="CenteredBox margin-top5 ">
+<asp:Content ID="Content1"  ContentPlaceHolderID="MainContent"  runat="server">
+<asp:Panel ID="containBuscador" runat="server" style="border: 5px solid black;" CssClass =" BGLightBeige CenteredBox margin-top5 ">
 
-    <input id="buscador" type="text" placeholder="Qué estas buscando?" style="background-color: #313131; font-weight:bolder" class="stretch-60 borderColor TextRoyalBlue"/>
-</asp:Panel>
-    <asp:Panel ID="containerResultado" runat="server"  CssClass="Theme1 DisInline VerticalStretch1200px">
-        <asp:Panel ID="containFiltros" runat="server" CssClass="TextAliceBlue Theme2">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Precio: Mayor a Menor
+    <input id="buscador" type="text" placeholder="Qué estas buscando?"   class="stretch-60 darkGrayBackground CPText Bolder"/>
+</asp:Panel >
+    <asp:Panel ID="containerResultado" runat="server" style="border-right:5px black solid;border-left:5px black solid;border-bottom:5px black solid;" CssClass=" DisInline VerticalStretch1200px">
+        <asp:Panel ID="containFiltros" runat="server" style="border-right:5px black solid;" CssClass="TextAliceBlue BGLightBeige">
+          <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label text-nowrap" for="flexRadioDefault1">
+               Canastos
               </label>
+              
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label" for="flexCheckChecked">
-                Precio: Menor a Mayor
+              <input class="form-check-input text-nowrap" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label text-nowrap" for="flexRadioDefault2">
+                Individuales  
               </label>
             </div>
         </asp:Panel>
-        <div class="container stretch-60 Theme3">
+        <div class="container stretch-60 BGWarmGreen">
 
             <asp:Panel ID="CartaProducto"  CssClass="CartaProducto" runat="server"> <! –– DESPUES SE EMPROLIJA Y PARAMETRIZA LA CARTA DE PRODUCTO PARA MANDARLE IMG, TITULO,DESC,PRECIO Y QUE SE PUSHEE O POPEE DE UNA LISTA ––>
                 <asp:Image ID="ImagenProducto" ImageUrl="~/Content/Question-Box.png" CssClass="Small" runat="server" />
