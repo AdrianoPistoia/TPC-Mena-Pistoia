@@ -7,14 +7,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - The Carpet Shop</title>
-
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
 </head>
 <body  class="BGCutePink BorderShadowLB TCS-Background-Image-Body  ">
     <form runat="server">
@@ -37,7 +34,6 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
         <div class="navbar navbar-inverse navbar-fixed-top BorderColorLB BorderShadowLB BGLightBeige">
             <div class="container">
                 <div class="navbar-header">
@@ -65,12 +61,11 @@
             <hr class="BorderColorLB"/>
             <footer >
                 <div style="display:grid; height:10vw;padding:10px;" class=" darkGrayBackground " >
-                    <p style="align-self:center" class="CPText">&copy; <%: DateTime.Now.Year %> - The Carpet Shop</p>
-                    <p style="align-self:center" class ="CPText">Intlectual property of Mena German & Pistoia Adriano</p>
+                    <p style="align-self:center" class="CPText">&copy; <%: DateTime.Now.Year %> - The Carpet Shop.</p>
+                    <p style="align-self:center" class="CPText">Developed by Mena German & Pistoia Adriano.</p>
                 </div>
             </footer>
         </div>
-
     </form>
 </body>
 </html>
