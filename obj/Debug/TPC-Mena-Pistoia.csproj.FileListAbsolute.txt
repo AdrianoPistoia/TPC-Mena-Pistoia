@@ -145,3 +145,7 @@ C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\obj\Debug\
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\obj\Debug\TPC-Mena-Pistoia.csproj.CopyComplete
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\obj\Debug\TPC-Mena-Pistoia.dll
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\obj\Debug\TPC-Mena-Pistoia.pdb
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\bin\Dominio.dll
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\bin\Negocio.dll
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\bin\Dominio.pdb
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\bin\Negocio.pdb

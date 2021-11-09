@@ -11,14 +11,13 @@ namespace TPC_Mena_Pistoia
 {
     public partial class Producto : System.Web.UI.Page
     {
-        public List<Dominio.Producto> listaProductos;
+    
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            ProductoNegocio negocio = new Negocio.ProductoNegocio();
-            listaProductos = negocio.listar();
-
+            
         }
+
+        
     }
 }

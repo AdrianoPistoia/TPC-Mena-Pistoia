@@ -1,0 +1,6 @@
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\bin\Debug\Dominio.dll
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\bin\Debug\Dominio.pdb
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.dll
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.pdb

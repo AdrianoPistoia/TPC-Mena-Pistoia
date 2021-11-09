@@ -69,22 +69,22 @@ namespace TPC_Mena_Pistoia
         protected global::System.Web.UI.WebControls.Panel Texto;
 
         /// <summary>
-        /// TituloProducto control.
+        /// TituloProducto1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TituloProducto;
+        protected global::System.Web.UI.WebControls.Label TituloProducto1;
 
         /// <summary>
-        /// Precio control.
+        /// Precio1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Precio;
+        protected global::System.Web.UI.WebControls.Label Precio1;
 
         /// <summary>
         /// Panel1 control.
@@ -114,21 +114,21 @@ namespace TPC_Mena_Pistoia
         protected global::System.Web.UI.WebControls.Panel Panel2;
 
         /// <summary>
-        /// Label1 control.
+        /// TituloProducto2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label TituloProducto2;
 
         /// <summary>
-        /// Label2 control.
+        /// Precio2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label Precio2;
     }
 }

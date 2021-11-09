@@ -26,25 +26,30 @@
         </asp:Panel>
         <div class="container stretch-60 BGWarmGreen">
 
+
+
             <asp:Panel ID="CartaProducto" CssClass="CartaProducto" runat="server">
                 <! –– DESPUES SE EMPROLIJA Y PARAMETRIZA LA CARTA DE PRODUCTO PARA MANDARLE IMG, TITULO,DESC,PRECIO Y QUE SE PUSHEE O POPEE DE UNA LISTA ––>
+                
                 <asp:Image ID="ImagenProducto" ImageUrl="~/Content/Question-Box.png" CssClass="Small" runat="server" />
                 <a href="~/Producto" runat="server">
                     <asp:Panel ID="Texto" runat="server">
-                        <asp:Label ID="TituloProducto" runat="server" CssClass="Bolder  ocupametodo" Text="Label">Producton´t</asp:Label>
-                        <asp:Label ID="Precio" runat="server" CssClass=" Bolder ocupametodo preciotag" Text="Label"> $100 <br /></asp:Label>
+
+                        <asp:Label ID="TituloProducto1" runat="server" CssClass="Bolder ocupametodo" Text="">  </asp:Label>
+                        <asp:Label ID="Precio1" runat="server" CssClass=" Bolder ocupametodo preciotag" Text="Label"> $100 <br /></asp:Label>
                         <asp:Label Text="DescripcionProducto" runat="server"> Este Producto carece de veracidad, es un producto irreal creado por la ficcion narrada en su cabeza, estando asi , certificado por <br />cualquier cantidad de entidades ficticias de alta estima y posicion <br /> economica en el mercado</asp:Label>
                     </asp:Panel>
                 </a>
             </asp:Panel>
+
 
             <asp:Panel ID="Panel1" CssClass="CartaProducto" runat="server">
                 <! –– DESPUES SE EMPROLIJA Y PARAMETRIZA LA CARTA DE PRODUCTO PARA MANDARLE IMG, TITULO,DESC,PRECIO Y QUE SE PUSHEE O POPEE DE UNA LISTA ––>
                 <asp:Image ID="Image1" ImageUrl="~/Content/Question-Box.png" CssClass="Small" runat="server" />
                 <a href="~/Producto" runat="server">
                     <asp:Panel ID="Panel2" runat="server">
-                        <asp:Label ID="Label1" runat="server" CssClass="Bolder  ocupametodo" Text="Label">Producton´t</asp:Label>
-                        <asp:Label ID="Label2" runat="server" CssClass=" Bolder ocupametodo preciotag" Text="Label"> $100 <br /></asp:Label>
+                        <asp:Label ID="TituloProducto2" runat="server" CssClass="Bolder  ocupametodo" Text="Label">Producton´t</asp:Label>
+                        <asp:Label ID="Precio2" runat="server" CssClass=" Bolder ocupametodo preciotag" Text="Label"> $100 <br /></asp:Label>
                         <asp:Label Text="DescripcionProducto" runat="server"> Este Producto carece de veracidad, es un producto irreal creado por la ficcion narrada en su cabeza, estando asi , certificado por <br />cualquier cantidad de entidades ficticias de alta estima y posicion <br /> economica en el mercado</asp:Label>
                     </asp:Panel>
                 </a>
