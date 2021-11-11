@@ -18,7 +18,8 @@ namespace TPC_Mena_Pistoia
             listaProductos = negocio.listar();
 
             TituloProducto1.Text = ""+listaProductos[0].Nombre;
-            Precio1.Text = "$"+listaProductos[0].Precio;
+            Precio1.Text = "$" + (int)listaProductos[0].Precio;
+            DescripcionProducto1.Text = listaProductos[0].Descripcion;
         }
     }
 }

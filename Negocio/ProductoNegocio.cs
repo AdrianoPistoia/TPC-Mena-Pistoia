@@ -24,17 +24,17 @@ namespace Negocio
                 while (datos.Lector.Read())
                 {
                     Producto aux = new Producto();
+                    aux.Marca = new Marca();
+                    aux.Categoria = new Categoria();
 
                     aux.ID = (int)datos.Lector["Id"];
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
-                   // aux.Marca = new Marca();
-                   // aux.Marca.ID = (int)datos.Lector["IdMarca"];
-                   // aux.Marca.Descripcion = (string)datos.Lector["Marca"];
-                   // aux.Categoria = new Categoria();
-                   // aux.Categoria.ID = (int)datos.Lector["IdCategoria"];
-                   // aux.Categoria.Descripcion = (string)datos.Lector["Categoria"];
+                    aux.Marca.ID = (int)datos.Lector["IdMarca"]; 
+                    aux.Marca.Descripcion = (string)datos.Lector["Marca"];
+                    aux.Categoria.ID = (int)datos.Lector["IdCategoria"];
+                    aux.Categoria.Descripcion = (string)datos.Lector["Categoria"];
                    // aux.Imagen = new Imagen();
                    // aux.Imagen.Link = (string)datos.Lector["ImagenURL"];
                     aux.Precio = (decimal)datos.Lector["Precio"];
