@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\bin\Debug\Negocio.dll
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\bin\Debug\Negocio.pdb
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\bin\Debug\Dominio.dll
@@ -7,3 +8,14 @@ C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\ob
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\obj\Debug\Negocio.dll
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\obj\Debug\Negocio.pdb
+=======
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Negocio\bin\Debug\Negocio.dll
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Negocio\bin\Debug\Negocio.pdb
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Negocio\bin\Debug\Dominio.dll
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Negocio\bin\Debug\Dominio.pdb
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Negocio\obj\Debug\Negocio.dll
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Negocio\obj\Debug\Negocio.pdb
+>>>>>>> 12170725e6e4a80c35150e5fdffc2bdb993efc4d
