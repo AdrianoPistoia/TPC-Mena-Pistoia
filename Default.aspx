@@ -2,7 +2,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div id="cardRecepcion1" class="BorderLB BorderShadowLB TCS-Background-Image TextAliceBlue" style="height:32vw;margin:10px;" ></div>
-    <div id="cardRecepcion2" class="BorderLB BorderShadowLB TCS-Background-Image2 TextAliceBlue" style="height:32vw;margin:10px;" ></div>
+    <div id="cardRecepcion1" class="BorderLB BorderShadowLB TCS-Background-Image TextAliceBlue" style="height: 32vw; margin: 10px;"></div>
+
+    <div id="cardRecepcion2" class="BorderLB BorderShadowLB TCS-Background-Image2 TextAliceBlue" style="height: 32vw; margin: 10px;"></div>
 
 </asp:Content>

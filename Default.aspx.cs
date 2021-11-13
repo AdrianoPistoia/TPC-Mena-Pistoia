@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Dominio;
+using Negocio;
 
 namespace TPC_Mena_Pistoia
 {
@@ -11,7 +13,8 @@ namespace TPC_Mena_Pistoia
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //ProductoNegocio service = new ProductoNegocio();
+            //service.listar();
         }
     }
 }

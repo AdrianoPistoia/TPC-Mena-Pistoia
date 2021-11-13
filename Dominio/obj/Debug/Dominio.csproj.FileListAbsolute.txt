@@ -1,0 +1,6 @@
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\bin\Debug\Dominio.dll
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\bin\Debug\Dominio.pdb
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.dll
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.pdb

@@ -8,11 +8,11 @@ using Dominio;
 
 namespace Negocio
 {
-    class ProductoNegocio
+    public class ProductoNegocio
     {
-        public List<Producto> listar()
+        public List<Dominio.Producto> listar()
         {
-            List<Producto> lista = new List<Producto>();
+            List<Dominio.Producto> lista = new List<Dominio.Producto>();
             AccesoDatos datos = new AccesoDatos();
 
             try
@@ -23,7 +23,7 @@ namespace Negocio
 
                 while (datos.Lector.Read())
                 {
-                    Producto aux = new Producto();
+                    Dominio.Producto aux = new Dominio.Producto();
 
                     aux.ID = (int)datos.Lector["Id"];
                     aux.Codigo = (string)datos.Lector["Codigo"];
@@ -36,8 +36,23 @@ namespace Negocio
                     aux.Categoria.ID = (int)datos.Lector["IdCategoria"];
                     aux.Categoria.Descripcion = (string)datos.Lector["Categoria"];
                     aux.Imagen = new Imagen();
-                    aux.Imagen.Link = (string)datos.Lector["ImagenURL"];
+                    aux.Imagen.ID = (int)datos.Lector["IdImagen"];
+                    aux.Imagen.Descripcion = (string)datos.Lector["Imagen"];
+                    aux.Imagen.Link = (string)datos.Lector["Link"];
                     aux.Precio = (decimal)datos.Lector["Precio"];
+                    aux.Cantidad = (decimal)datos.Lector["Cantidad"];
+
+                    /*
+
+                    //aux.ID = datos.Lector.GetInt32(0);
+                    //aux.Codigo = datos.Lector.GetString(1);
+                    aux.Nombre = datos.Lector.GetString(2);
+                    aux.Descripcion = datos.Lector.GetString(3);
+                    aux.Precio = datos.Lector.GetDecimal(8);
+                    aux.Imagen = new Imagen();
+                    aux.Imagen.Link = datos.Lector.GetString(6);
+
+                    */
 
                     lista.Add(aux);
                 }

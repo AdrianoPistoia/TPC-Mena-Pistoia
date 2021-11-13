@@ -1,0 +1,9 @@
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\bin\Debug\Negocio.dll
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\bin\Debug\Negocio.pdb
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\bin\Debug\Dominio.dll
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\bin\Debug\Dominio.pdb
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\obj\Debug\Negocio.dll
+C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Negocio\obj\Debug\Negocio.pdb
