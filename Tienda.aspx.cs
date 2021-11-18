@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using Negocio;
 using Dominio;
 
+
 namespace TPC_Mena_Pistoia
 {
     public partial class WebForm1 : System.Web.UI.Page
@@ -21,7 +22,10 @@ namespace TPC_Mena_Pistoia
 
         protected void btnAgregarProducto_Click(object sender, EventArgs e)
         {
-            
+            /*TituloProducto1.Text = ""+listaProductos[0].Nombre;
+            Precio1.Text = "$" + (int)listaProductos[0].Precio;
+            DescripcionProducto1.Text = listaProductos[0].Descripcion;*/
+
         }
     }
 }

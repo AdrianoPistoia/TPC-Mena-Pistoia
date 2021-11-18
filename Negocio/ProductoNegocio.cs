@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Dominio;
 
-
 namespace Negocio
 {
     public class ProductoNegocio
@@ -23,36 +22,27 @@ namespace Negocio
 
                 while (datos.Lector.Read())
                 {
+
                     Dominio.Producto aux = new Dominio.Producto();
+
 
                     aux.ID = (int)datos.Lector["Id"];
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
+
                     aux.Marca = new Marca();
                     aux.Marca.ID = (int)datos.Lector["IdMarca"];
                     aux.Marca.Descripcion = (string)datos.Lector["Marca"];
                     aux.Categoria = new Categoria();
                     aux.Categoria.ID = (int)datos.Lector["IdCategoria"];
-                    aux.Categoria.Descripcion = (string)datos.Lector["Categoria"];
+
                     aux.Imagen = new Imagen();
                     aux.Imagen.ID = (int)datos.Lector["IdImagen"];
                     aux.Imagen.Descripcion = (string)datos.Lector["Imagen"];
                     aux.Imagen.Link = (string)datos.Lector["Link"];
                     aux.Precio = (decimal)datos.Lector["Precio"];
                     aux.Cantidad = (decimal)datos.Lector["Cantidad"];
-
-                    /*
-
-                    //aux.ID = datos.Lector.GetInt32(0);
-                    //aux.Codigo = datos.Lector.GetString(1);
-                    aux.Nombre = datos.Lector.GetString(2);
-                    aux.Descripcion = datos.Lector.GetString(3);
-                    aux.Precio = datos.Lector.GetDecimal(8);
-                    aux.Imagen = new Imagen();
-                    aux.Imagen.Link = datos.Lector.GetString(6);
-
-                    */
 
                     lista.Add(aux);
                 }
