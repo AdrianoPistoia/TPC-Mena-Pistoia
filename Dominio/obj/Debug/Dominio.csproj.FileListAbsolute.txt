@@ -4,9 +4,3 @@ C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\ob
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.dll
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.pdb
-C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\bin\Debug\Dominio.dll
-C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\bin\Debug\Dominio.pdb
-C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
-C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
-C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.dll
-C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.pdb
