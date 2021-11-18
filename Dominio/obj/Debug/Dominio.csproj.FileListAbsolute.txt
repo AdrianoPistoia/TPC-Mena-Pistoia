@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\bin\Debug\Dominio.dll
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\bin\Debug\Dominio.pdb
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.dll
 C:\Users\germa\Desktop\TSP\Programacion III\TP Final\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.pdb
+=======
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\bin\Debug\Dominio.dll
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\bin\Debug\Dominio.pdb
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.dll
+C:\Users\adrip\Documents\GitHub\TPC-Mena-Pistoia\TPC-Mena-Pistoia\Dominio\obj\Debug\Dominio.pdb
+>>>>>>> 12170725e6e4a80c35150e5fdffc2bdb993efc4d
