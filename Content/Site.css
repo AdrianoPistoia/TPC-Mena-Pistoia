@@ -78,6 +78,17 @@ a:hover{
 .Theme2{ background-color:black;}
 .Theme3 {background-color: #cae6ff;}
 
+.adrImage {
+    background-image: url('Images/REC.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+
+}
+.gerImage {
+    background-image: url('Images/Ger.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .BGLightBeige {
     background-color: rgba(219,194,155,0.9);
 }
