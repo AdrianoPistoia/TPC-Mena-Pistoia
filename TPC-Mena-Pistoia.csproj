@@ -123,6 +123,7 @@
     <Content Include="Content\Images\Image7.png" />
     <Content Include="Content\Images\Image8.png" />
     <Content Include="Content\Images\Image9.png" />
+    <Content Include="Content\Images\Placeholder.png" />
     <Content Include="Content\Images\REC.png" />
     <Content Include="Content\Images\Style.png" />
     <Content Include="Content\Question-Box.png" />
