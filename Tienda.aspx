@@ -40,14 +40,14 @@
 
                     { %>
                     
-                    <div id="<%="ProdID_"+Producto.ID.ToString()%>" class="BGLightBeige" style="width: 18rem; border: solid 3px black; padding: 10px; margin: 13px;">
+                    <div id="<%="ProdID_"+Producto.ID.ToString()%>" class="BGLightBeige" style="width: 18rem; border: solid 3px black; padding: 10px; margin: 13px;display:flex;flex-direction:column;align-self:center"S>
                         <img src="<%= !(string.IsNullOrEmpty(Producto.Imagen.Link)) ? Producto.Imagen.Link : "Content/Images/Placeholder.png"%>" class="card-img-top" width="155" height="155" style="border:black solid 2px;display:flex;flex-direction:column;"  alt="..." />
                         <div class="card-body Bolder">
                             <h4 class="card-title Bolder"  style="text-align:center" ><%: Producto.Nombre %></h4>
                             <p class="card-text" style="text-align:center" >Descripcion: <%: Producto.Descripcion %></p>
                             <p class="card-text" style="text-align:center" >Precio: $<%:Decimal.ToInt32(Producto.Precio)%></p>
                         </div>
-                        <asp:Button style="disaply:flex;align-self:center"  ID="btnAgregarProducto" OnClick="btnAgregarProducto_Click" runat="server" Text="Agregar al carrito" />
+                        <asp:Button   ID="btnAgregarProducto" OnClick="btnAgregarProducto_Click" runat="server" Text="Agregar al carrito" />
                     </div>
 
                 <% } %>
