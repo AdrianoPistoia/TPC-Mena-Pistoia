@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Carrito.aspx.cs" Inherits="TPC_Mena_Pistoia.WebForm2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
  <div class="boldersticky BGCozyRed" style="width:150px;height:100px;position:sticky;left:0px;top:50vh; border-top:5px solid black; border-right:5px solid black; border-bottom:5px solid black;padding-left:20px;">   
         <asp:Panel runat="server" style="top: 20%;position: relative;"><!-- barra de "comprar carrito"+"precio total" -->
             <div style="display:grid;justify-content:center;"> <!--  panel corrector -->
