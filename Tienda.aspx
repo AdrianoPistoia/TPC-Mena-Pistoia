@@ -47,12 +47,8 @@
                                 <p class="card-text" style="text-align:center" >Descripcion: <%: Producto.Descripcion %></p>
                                 <p class="card-text" style="text-align:center" >Precio: $<%:Decimal.ToInt32(Producto.Precio)%></p>
                             </div>
-                            <a type="button" style="background-color:rgba(108,134,60,0.9)" class="btn btn-primary" href="/Carrito.aspx?ID=<%: Producto.ID.ToString() %>" > Agregar a carrito! </a>
+                            <a type="button" style="background-color:rgba(108,134,60,0.9)" class="btn btn-primary" onclick="<%  %>" href="/Tienda.aspx?id=<%: Producto.ID.ToString() %>" >Agregar al carrito!</a>
                     </div>
-
-
-                
-
                 <%} %>
 
             </asp:Panel>
