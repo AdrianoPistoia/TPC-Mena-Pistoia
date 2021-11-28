@@ -15,11 +15,18 @@ namespace TPC_Mena_Pistoia
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
             listaFavoritos = (List<Dominio.Producto>)Session["listaFavoritos"];
+            
             foreach (Dominio.Producto prod in listaFavoritos)
             {
+                
+                
+                /// 
                 precioTotal += Decimal.ToInt32(prod.Precio);
+                
             }
+
         }
 
         protected void EliminarFav_Click(object sender, EventArgs e)

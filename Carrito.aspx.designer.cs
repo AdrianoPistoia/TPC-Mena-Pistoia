@@ -24,12 +24,12 @@ namespace TPC_Mena_Pistoia
         protected global::System.Web.UI.WebControls.Panel containerResultado;
 
         /// <summary>
-        /// EliminarFav control.
+        /// CartaProducto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button EliminarFav;
+        protected global::System.Web.UI.WebControls.Panel CartaProducto;
     }
 }

@@ -30,10 +30,7 @@
 
 
 
-            <asp:Panel ID="CartaProducto" style="background-color: rgba(19,14,10,0.3);flex-wrap:wrap;justify-content:space-between" CssClass="CartaProducto " runat="server">
-
-
-          
+            <asp:Panel ID="CartaProducto" style="background-color: rgba(19,14,10,0.3);flex-wrap:wrap;justify-content:space-between" CssClass="CartaProducto" runat="server">
                 <%
                     foreach (var Producto in listaProductos)
                       
