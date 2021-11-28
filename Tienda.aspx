@@ -30,7 +30,7 @@
 
 
 
-            <asp:Panel ID="CartaProducto" style="background-color: rgba(19,14,10,0.3);" CssClass="CartaProducto " runat="server">
+            <asp:Panel ID="CartaProducto" style="background-color: rgba(19,14,10,0.3);flex-wrap:wrap;justify-content:space-between" CssClass="CartaProducto " runat="server">
 
 
           
@@ -40,14 +40,16 @@
 
 
                     { %>
-                    <div id="prod" class="BGLightBeige" style="width: 18rem; border: solid 3px black; padding: 10px; margin: 13px;display:flex;flex-direction:column;align-self:center">
-                            <img src="<%= !(string.IsNullOrEmpty(Producto.Imagen.Link)) ? Producto.Imagen.Link : "Content/Images/Placeholder.png"%>" class="card-img-top" width="155" height="155" style="border:black solid 2px;display:flex;flex-direction:column;"  alt="..." />
+                    <div id="prod" class="BGLightBeige" style="width: 24rem; border: solid 3px black; padding: 10px; margin: 5px;display:flex;flex-direction:column;align-items:center">
+                        <a style="display:flex;flex-direction:column;align-items:center;" href="/Producto?id=<%: Producto.ID.ToString() %>">
+                            <img src="<%= !(string.IsNullOrEmpty(Producto.Imagen.Link)) ? Producto.Imagen.Link : "Content/Images/Placeholder.png"%>" class="card-img-top" width="170" height="170" style="border:black solid 2px;"  alt="..." />
                             <div class="card-body Bolder">
                                 <h4 class="card-title Bolder"  style="text-align:center" ><%: Producto.Nombre %></h4>
                                 <p class="card-text" style="text-align:center" >Descripcion: <%: Producto.Descripcion %></p>
                                 <p class="card-text" style="text-align:center" >Precio: $<%:Decimal.ToInt32(Producto.Precio)%></p>
                             </div>
-                            <a type="button" style="background-color:rgba(108,134,60,0.9)" class="btn btn-primary" onclick="<%  %>" href="/Tienda.aspx?id=<%: Producto.ID.ToString() %>" >Agregar al carrito!</a>
+                        </a>
+                            <a type="button" style="background-color:rgba(108,134,60,0.9)" class="btn Bolder btn-secondary" onclick="<%  %>" href="/Tienda.aspx?id=<%: Producto.ID.ToString() %>" >Agregar al carrito!</a>
                     </div>
                 <%} %>
 
