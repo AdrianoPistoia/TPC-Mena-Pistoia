@@ -16,10 +16,14 @@ namespace TPC_Mena_Pistoia
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            ProductoNegocio negocio = new ProductoNegocio();
+
             if (!IsPostBack)
             {
-                ProductoNegocio negocio = new ProductoNegocio();
-                listaProductos = negocio.listar();
+                
+
+
+                listaProductos = negocio.listar("");
                 Session.Add("listaProductos", listaProductos);
 
                 if (Session["listaFavoritos"] == null)
@@ -34,14 +38,26 @@ namespace TPC_Mena_Pistoia
             {
                 int id = int.Parse(Request.QueryString["id"]);
 
+
+
                 listaFavoritos = (List<Dominio.Producto>)Session["listaFavoritos"];
                 listaProductos = (List<Dominio.Producto>)Session["listaProductos"];
 
                 Dominio.Producto nuevoFavorito = listaProductos.Find(producto => producto.ID == id);
+               /// negocio.sql_SetFavorito(listaProductos.Find(producto => producto.ID == id));
+
                 listaFavoritos.Add(nuevoFavorito);
 
                 Session.Add("listaFavoritos", listaFavoritos);
             }
+        }
+
+        protected void ddl_cantidad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
+
+
         }
     }
 }

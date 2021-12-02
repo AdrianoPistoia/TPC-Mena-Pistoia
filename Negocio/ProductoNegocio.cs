@@ -10,14 +10,37 @@ namespace Negocio
 {
     public class ProductoNegocio
     {
-        public List<Dominio.Producto> listar()
+        
+        public void sql_SetFavorito(Dominio.Producto aModificar)
         {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta(Diccionario.UPDATE_FAVORITO);
+
+                datos.setearParametro("@Favorito", aModificar.Favorito);
+                datos.setearParametro("@id", aModificar.ID);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public List<Dominio.Producto> listar(string Lectura)//En caso de querer listar todos, dejar parametro vacio
+        {
+            if (String.IsNullOrEmpty(Lectura) || Lectura == null)
+            {
+                Lectura = "";
+            }
             List<Dominio.Producto> lista = new List<Dominio.Producto>();
             AccesoDatos datos = new AccesoDatos();
 
             try
             {
-                datos.setearConsulta(Diccionario.LISTAR_TODOS_ARTICULOS);
+                datos.setearConsulta(Diccionario.LISTAR_TODOS_ARTICULOS+"");
 
                 datos.ejecutarLectura();
 
@@ -48,7 +71,7 @@ namespace Negocio
 
                     aux.Precio = (decimal)datos.Lector["Precio"];
                     aux.Cantidad = (decimal)datos.Lector["Cantidad"];
-
+                    aux.Favorito = (bool)datos.Lector["Favorito"];
                     /*
 
                     //aux.ID = datos.Lector.GetInt32(0);

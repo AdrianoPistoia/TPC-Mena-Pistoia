@@ -31,24 +31,33 @@
 
 
             <asp:Panel ID="CartaProducto" style="background-color: rgba(19,14,10,0.3);flex-wrap:wrap;justify-content:space-between" CssClass="CartaProducto" runat="server">
-                <%
-                    foreach (var Producto in listaProductos)
-                      
+                <%  foreach (var Producto in (List<Dominio.Producto>)Session["listaProductos"])
+                    {
 
-
-                    { %>
+                     %>
                     <div id="prod" class="BGLightBeige" style="width: 24rem; border: solid 3px black; padding: 10px; margin: 5px;display:flex;flex-direction:column;align-items:center">
-                        <a style="display:flex;flex-direction:column;align-items:center;" href="/Producto?id=<%: Producto.ID.ToString() %>">
+                        <a style="display:flex;flex-direction:column;align-items:center;" href="/Producto?id=<%: Producto.ID.ToString() %>&cantidad=<%:ddl_cantidad.SelectedValue.ToString() %>">
                             <img src="<%= !(string.IsNullOrEmpty(Producto.Imagen.Link)) ? Producto.Imagen.Link : "Content/Images/Placeholder.png"%>" class="card-img-top" width="170" height="170" style="border:black solid 2px;"  alt="..." />
                             <div class="card-body Bolder">
                                 <h4 class="card-title Bolder"  style="text-align:center" ><%: Producto.Nombre %></h4>
                                 <p class="card-text" style="text-align:center" >Descripcion: <%: Producto.Descripcion %></p>
                                 <p class="card-text" style="text-align:center" >Precio: $<%:Decimal.ToInt32(Producto.Precio)%></p>
+                                <asp:Label Text="text" runat="server" />
                             </div>
                         </a>
-                            <a type="button" style="background-color:rgba(108,134,60,0.9)" class="btn Bolder btn-secondary" onclick="<%  %>" href="/Tienda.aspx?id=<%: Producto.ID.ToString() %>" >Agregar al carrito!</a>
+                        <div style="display:flex;flex-direction:row">
+                            <a type="button" href="/Tienda.aspx?id=<%: Producto.ID.ToString() %>&cantidad=<%:ddl_cantidad.SelectedValue.ToString() %>"  style="background-color:rgba(108,134,60,0.9)" class="btn Bolder btn-secondary" >Agregar al carrito!</a>
+                            <%
+                                ddl_cantidad.Items.Clear();
+                                for(int i = 1; i<=Decimal.ToInt32(Producto.Cantidad);i++)
+                                {
+                                    ddl_cantidad.Items.Add(i.ToString()); ;
+                                }
+                                %>
+                            <asp:DropDownList ID="ddl_cantidad" OnSelectedIndexChanged="ddl_cantidad_SelectedIndexChanged" runat="server" AutoPostBack="true"></asp:DropDownList>
+                        </div>
                     </div>
-                <%} %>
+                <%  } %>
 
             </asp:Panel>
         </div>

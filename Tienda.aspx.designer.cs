@@ -49,5 +49,14 @@ namespace TPC_Mena_Pistoia
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel CartaProducto;
+
+        /// <summary>
+        /// ddl_cantidad control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_cantidad;
     }
 }

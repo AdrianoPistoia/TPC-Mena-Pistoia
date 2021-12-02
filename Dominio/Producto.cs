@@ -17,5 +17,7 @@ namespace Dominio
         public Imagen Imagen { get; set; }
         public decimal Precio { get; set; }
         public decimal Cantidad { get; set; }
+        public int CantidadSeleccionada { get; set; }
+        public bool Favorito { get; set; }
     }
 }
