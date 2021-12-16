@@ -14,16 +14,19 @@ namespace TPC_Mena_Pistoia
 
         public List<Dominio.Producto> listaFavoritos { get; set; }
 
+        public ProductoNegocio negocio = new ProductoNegocio();
+        public int dll_valor = 0;
+        public static int dll_iterator = 0;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            ProductoNegocio negocio = new ProductoNegocio();
-
+           
             if (!IsPostBack)
             {
-                
-
-
                 listaProductos = negocio.listar("");
+
+                repeater.DataSource = negocio.listar("");
+                repeater.DataBind();
                 Session.Add("listaProductos", listaProductos);
 
                 if (Session["listaFavoritos"] == null)
@@ -31,33 +34,33 @@ namespace TPC_Mena_Pistoia
                     listaFavoritos = new List<Dominio.Producto>();
                     Session.Add("listaFavoritos", listaFavoritos);
                 }
-
+                ddl_cantidad1.Items.Clear();
+                foreach(var Producto in (List<Dominio.Producto>)Session["listaProductos"])
+                {
+                    for (int i = 1; i <= Decimal.ToInt32(Producto.Cantidad); i++)
+                    {
+                        ddl_cantidad1.Items.Add(i.ToString()); ;
+                    }
+                }
             }
 
             if (Request.QueryString["id"] != null)
             {
                 int id = int.Parse(Request.QueryString["id"]);
 
+                negocio.sql_SetFavorito( listaProductos.Find(producto => producto.ID == id), 1);
 
-
-                listaFavoritos = (List<Dominio.Producto>)Session["listaFavoritos"];
-                listaProductos = (List<Dominio.Producto>)Session["listaProductos"];
-
-                Dominio.Producto nuevoFavorito = listaProductos.Find(producto => producto.ID == id);
-               /// negocio.sql_SetFavorito(listaProductos.Find(producto => producto.ID == id));
-
-                listaFavoritos.Add(nuevoFavorito);
-
-                Session.Add("listaFavoritos", listaFavoritos);
             }
         }
 
         protected void ddl_cantidad_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
-
+            int n = ddl_cantidad1.SelectedIndex;
 
         }
+
+
+
+        
     }
 }

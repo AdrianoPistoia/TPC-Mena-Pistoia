@@ -11,7 +11,7 @@ namespace Negocio
     public class ProductoNegocio
     {
         
-        public void sql_SetFavorito(Dominio.Producto aModificar)
+        public void sql_SetFavorito(Dominio.Producto aModificar,int ToF)
         {
             AccesoDatos datos = new AccesoDatos();
 
@@ -19,8 +19,9 @@ namespace Negocio
             {
                 datos.setearConsulta(Diccionario.UPDATE_FAVORITO);
 
-                datos.setearParametro("@Favorito", aModificar.Favorito);
                 datos.setearParametro("@id", aModificar.ID);
+                datos.setearParametro("@Favorito", ToF);
+                datos.ejecutarAccion();
             }
             catch (Exception ex)
             {
@@ -40,7 +41,7 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta(Diccionario.LISTAR_TODOS_ARTICULOS+"");
+                datos.setearConsulta(Diccionario.LISTAR_TODOS_ARTICULOS+Lectura);
 
                 datos.ejecutarLectura();
 
@@ -69,7 +70,7 @@ namespace Negocio
                     aux.Imagen.Link = (string)datos.Lector["Link"];
 
 
-                    aux.Precio = (decimal)datos.Lector["Precio"];
+                    aux.Precio = decimal.ToInt32((decimal)datos.Lector["Precio"]);
                     aux.Cantidad = (decimal)datos.Lector["Cantidad"];
                     aux.Favorito = (bool)datos.Lector["Favorito"];
                     /*
@@ -102,91 +103,7 @@ namespace Negocio
 
         }
 
-        /*
-
-        public void agregar(Producto nuevo)
-        {
-            AccesoDatos datos = new AccesoDatos();
-
-            try
-            {
-                datos.setearConsulta(Diccionario.AGREGAR_ARTICULO);
-
-                datos.setearParametro("@codigo", nuevo.Codigo);
-                datos.setearParametro("@nombre", nuevo.Nombre);
-                datos.setearParametro("@descripcion", nuevo.Descripcion);
-                datos.setearParametro("@idMarca", nuevo.Marca.ID);
-                datos.setearParametro("@idCategoria", nuevo.Categoria.ID);
-                datos.setearParametro("@imagen", nuevo.Imagen);
-                datos.setearParametro("@precio", nuevo.Precio);
-
-                datos.ejecutarAccion();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                datos.cerrarConexion();
-            }
-
-        }
-
-        public void modificar(Articulo modificar)
-        {
-            AccesoDatos datos = new AccesoDatos();
-
-            try
-            {
-                datos.setearConsulta(Diccionario.MODIFICAR_ARTICULO);
-
-                datos.setearParametro("@codigo", modificar.Codigo);
-                datos.setearParametro("@nombre", modificar.Nombre);
-                datos.setearParametro("@descripcion", modificar.Descripcion);
-                datos.setearParametro("@IdMarca", modificar.Marca.ID);
-                datos.setearParametro("@IdCategoria", modificar.Categoria.ID);
-                datos.setearParametro("@imagenUrl", modificar.Imagen);
-                datos.setearParametro("@precio", modificar.Precio);
-                datos.setearParametro("@ID", modificar.Id);
-
-                datos.ejecutarAccion();
-
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-            finally
-            {
-                datos.cerrarConexion();
-            }
-        }
-
-        public void eliminar(String Codigo)
-        {
-            AccesoDatos datos = new AccesoDatos();
-          
-            try
-            {
-                datos.setearConsulta(Diccionario.BORRAR_POR_CODIGO) ;
-                datos.setearParametro("@codigo", Codigo);
-                datos.ejecutarAccion();
-
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-            finally
-            {
-                datos.cerrarConexion();
-            }
-        }
-
-        */
+        
     }
     
 }

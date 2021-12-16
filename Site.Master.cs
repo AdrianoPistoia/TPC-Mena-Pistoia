@@ -14,7 +14,9 @@ namespace TPC_Mena_Pistoia
         protected void Page_Load(object sender, EventArgs e)
         {
             ProductoNegocio negocio = new ProductoNegocio();
-            listaProductos = negocio.listar();
+            listaProductos = negocio.listar("");
+
+            
         }
     }
 }

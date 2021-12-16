@@ -95,6 +95,7 @@ a:hover{
 .BorderLB {
     border: 1px solid rgba(219,146,0.8);
 }
+
 .BorderShadowLB {
     box-shadow: 0px 0px 20px rgba(219,146,0,0.8);
 }
@@ -145,6 +146,7 @@ a:hover{
 }
 .darkGrayBackground {
     background-color: #313131;
+
 }
 .TCS-Background-Image {
     background-image: url('Images/Caratula1.png');
@@ -275,4 +277,15 @@ a:hover{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display: block;
-} 
+}
+
+.hardBtnFin {
+padding-left:20px;
+padding-right:15px;
+font-size:large;
+border:5px solid black;
+background-color: rgba(168,194,120,0.9);
+position:absolute;
+bottom:35px;
+}
+
